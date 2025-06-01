@@ -14,8 +14,8 @@ import (
 	"github.com/grpc-ecosystem/grpc-gateway/runtime"
 	"google.golang.org/grpc"
 
-	"phoenicai/x/phoenicai/keeper"
-	"phoenicai/x/phoenicai/types"
+	"github.com/phoenicai/phoenicai-core/phoenicai/x/phoenicai/keeper"
+	"github.com/phoenicai/phoenicai-core/phoenicai/x/phoenicai/types"
 )
 
 var (

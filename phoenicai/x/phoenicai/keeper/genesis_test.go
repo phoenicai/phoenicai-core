@@ -3,9 +3,9 @@ package keeper_test
 import (
 	"testing"
 
-	"phoenicai/x/phoenicai/types"
-
 	"github.com/stretchr/testify/require"
+
+	"github.com/phoenicai/phoenicai-core/phoenicai/x/phoenicai/types"
 )
 
 func TestGenesis(t *testing.T) {

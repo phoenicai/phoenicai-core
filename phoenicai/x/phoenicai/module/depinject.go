@@ -9,8 +9,8 @@ import (
 	"github.com/cosmos/cosmos-sdk/codec"
 	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
 
-	"phoenicai/x/phoenicai/keeper"
-	"phoenicai/x/phoenicai/types"
+	"github.com/phoenicai/phoenicai-core/phoenicai/x/phoenicai/keeper"
+	"github.com/phoenicai/phoenicai-core/phoenicai/x/phoenicai/types"
 )
 
 var _ depinject.OnePerModuleType = AppModule{}

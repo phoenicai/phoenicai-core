@@ -3,7 +3,7 @@ package phoenicai
 import (
 	autocliv1 "cosmossdk.io/api/cosmos/autocli/v1"
 
-	"phoenicai/x/phoenicai/types"
+	"github.com/phoenicai/phoenicai-core/phoenicai/x/phoenicai/types"
 )
 
 // AutoCLIOptions implements the autocli.HasAutoCLIConfig interface.

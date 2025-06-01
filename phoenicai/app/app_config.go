@@ -1,9 +1,10 @@
 package app
 
 import (
-	_ "phoenicai/x/phoenicai/module"
-	phoenicaimoduletypes "phoenicai/x/phoenicai/types"
 	"time"
+
+	_ "github.com/phoenicai/phoenicai-core/phoenicai/x/phoenicai/module"
+	phoenicaimoduletypes "github.com/phoenicai/phoenicai-core/phoenicai/x/phoenicai/types"
 
 	runtimev1alpha1 "cosmossdk.io/api/cosmos/app/runtime/v1alpha1"
 	appv1alpha1 "cosmossdk.io/api/cosmos/app/v1alpha1"
@@ -13,7 +14,6 @@ import (
 	circuitmodulev1 "cosmossdk.io/api/cosmos/circuit/module/v1"
 	consensusmodulev1 "cosmossdk.io/api/cosmos/consensus/module/v1"
 	distrmodulev1 "cosmossdk.io/api/cosmos/distribution/module/v1"
-	epochsmodulev1 "cosmossdk.io/api/cosmos/epochs/module/v1"
 	evidencemodulev1 "cosmossdk.io/api/cosmos/evidence/module/v1"
 	feegrantmodulev1 "cosmossdk.io/api/cosmos/feegrant/module/v1"
 	genutilmodulev1 "cosmossdk.io/api/cosmos/genutil/module/v1"
@@ -51,8 +51,6 @@ import (
 	consensustypes "github.com/cosmos/cosmos-sdk/x/consensus/types"
 	_ "github.com/cosmos/cosmos-sdk/x/distribution" // import for side-effects
 	distrtypes "github.com/cosmos/cosmos-sdk/x/distribution/types"
-	_ "github.com/cosmos/cosmos-sdk/x/epochs" // import for side-effects
-	epochstypes "github.com/cosmos/cosmos-sdk/x/epochs/types"
 	genutiltypes "github.com/cosmos/cosmos-sdk/x/genutil/types"
 	_ "github.com/cosmos/cosmos-sdk/x/gov" // import for side-effects
 	govtypes "github.com/cosmos/cosmos-sdk/x/gov/types"
@@ -122,7 +120,6 @@ var (
 						evidencetypes.ModuleName,
 						stakingtypes.ModuleName,
 						authz.ModuleName,
-						epochstypes.ModuleName,
 						// ibc modules
 						ibcexported.ModuleName,
 						// chain modules
@@ -166,7 +163,7 @@ var (
 						group.ModuleName,
 						upgradetypes.ModuleName,
 						circuittypes.ModuleName,
-						epochstypes.ModuleName,
+						paramstypes.ModuleName,
 						// ibc modules
 						ibcexported.ModuleName,
 						ibctransfertypes.ModuleName,
@@ -264,10 +261,6 @@ var (
 			{
 				Name:   paramstypes.ModuleName,
 				Config: appconfig.WrapAny(&paramsmodulev1.Module{}),
-			},
-			{
-				Name:   epochstypes.ModuleName,
-				Config: appconfig.WrapAny(&epochsmodulev1.Module{}),
 			},
 			{
 				Name:   phoenicaimoduletypes.ModuleName,

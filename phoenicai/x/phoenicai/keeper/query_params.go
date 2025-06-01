@@ -9,7 +9,7 @@ import (
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 
-	"phoenicai/x/phoenicai/types"
+	"github.com/phoenicai/phoenicai-core/phoenicai/x/phoenicai/types"
 )
 
 func (q queryServer) Params(ctx context.Context, req *types.QueryParamsRequest) (*types.QueryParamsResponse, error) {

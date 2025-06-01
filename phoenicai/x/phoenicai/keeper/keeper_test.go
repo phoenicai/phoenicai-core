@@ -13,9 +13,9 @@ import (
 	moduletestutil "github.com/cosmos/cosmos-sdk/types/module/testutil"
 	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
 
-	"phoenicai/x/phoenicai/keeper"
-	module "phoenicai/x/phoenicai/module"
-	"phoenicai/x/phoenicai/types"
+	"github.com/phoenicai/phoenicai-core/phoenicai/x/phoenicai/keeper"
+	module "github.com/phoenicai/phoenicai-core/phoenicai/x/phoenicai/module"
+	"github.com/phoenicai/phoenicai-core/phoenicai/x/phoenicai/types"
 )
 
 type fixture struct {

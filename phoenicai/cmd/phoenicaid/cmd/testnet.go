@@ -27,7 +27,7 @@ import (
 	"github.com/spf13/cast"
 	"github.com/spf13/cobra"
 
-	"phoenicai/app"
+	"github.com/phoenicai/phoenicai-core/phoenicai/app"
 )
 
 const valVotingPower int64 = 900000000000000

@@ -3,7 +3,7 @@ package types_test
 import (
 	"testing"
 
-	"phoenicai/x/phoenicai/types"
+	"github.com/phoenicai/phoenicai-core/phoenicai/x/phoenicai/types"
 
 	"github.com/stretchr/testify/require"
 )

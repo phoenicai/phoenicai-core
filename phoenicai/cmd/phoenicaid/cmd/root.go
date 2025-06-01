@@ -17,7 +17,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/x/auth/types"
 	"github.com/spf13/cobra"
 
-	"phoenicai/app"
+	"github.com/phoenicai/phoenicai-core/phoenicai/app"
 )
 
 // NewRootCmd creates a new root command for phoenicaid. It is called once in the main function.

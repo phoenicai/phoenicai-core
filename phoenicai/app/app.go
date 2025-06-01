@@ -45,8 +45,8 @@ import (
 	ibctransferkeeper "github.com/cosmos/ibc-go/v10/modules/apps/transfer/keeper"
 	ibckeeper "github.com/cosmos/ibc-go/v10/modules/core/keeper"
 
-	"phoenicai/docs"
-	phoenicaimodulekeeper "phoenicai/x/phoenicai/keeper"
+	"github.com/phoenicai/phoenicai-core/phoenicai/docs"
+	phoenicaimodulekeeper "github.com/phoenicai/phoenicai-core/phoenicai/x/phoenicai/keeper"
 )
 
 const (

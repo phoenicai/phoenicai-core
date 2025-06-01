@@ -1,7 +1,7 @@
 package keeper
 
 import (
-	"phoenicai/x/phoenicai/types"
+	"github.com/phoenicai/phoenicai-core/phoenicai/x/phoenicai/types"
 )
 
 type msgServer struct {

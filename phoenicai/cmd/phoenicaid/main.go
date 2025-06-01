@@ -1,20 +1,17 @@
 package main
 
 import (
-	"fmt"
 	"os"
 
-	clienthelpers "cosmossdk.io/client/v2/helpers"
 	svrcmd "github.com/cosmos/cosmos-sdk/server/cmd"
 
-	"phoenicai/app"
-	"phoenicai/cmd/phoenicaid/cmd"
+	"github.com/phoenicai/phoenicai-core/phoenicai/app"
+	"github.com/phoenicai/phoenicai-core/phoenicai/cmd/phoenicaid/cmd"
 )
 
 func main() {
 	rootCmd := cmd.NewRootCmd()
-	if err := svrcmd.Execute(rootCmd, clienthelpers.EnvPrefix, app.DefaultNodeHome); err != nil {
-		fmt.Fprintln(rootCmd.OutOrStderr(), err)
+	if err := svrcmd.Execute(rootCmd, "", app.DefaultNodeHome); err != nil {
 		os.Exit(1)
 	}
 }

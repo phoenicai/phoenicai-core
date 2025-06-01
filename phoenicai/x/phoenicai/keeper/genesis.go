@@ -3,7 +3,7 @@ package keeper
 import (
 	"context"
 
-	"phoenicai/x/phoenicai/types"
+	"github.com/phoenicai/phoenicai-core/phoenicai/x/phoenicai/types"
 )
 
 // InitGenesis initializes the module's state from a provided genesis state.
