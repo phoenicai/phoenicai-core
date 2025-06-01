@@ -1,0 +1,13 @@
+syntax = "proto3";
+package phoenicai.phoenicai.v1;
+
+import "amino/amino.proto";
+import "gogoproto/gogo.proto";
+
+option go_package = "phoenicai/x/phoenicai/types";
+
+// Params defines the parameters for the module.
+message Params {
+  option (amino.name) = "phoenicai/x/phoenicai/Params";
+  option (gogoproto.equal) = true;
+}
